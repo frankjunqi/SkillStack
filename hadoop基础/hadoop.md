@@ -215,4 +215,6 @@
 
 ## 三：hadoop的入门的案例
 1. WordCount单词计数（hadoop中的hello world程序）：
+	- 代码片段:5-1-wordcount;
 2. 利用mapreduce进行排序：
+	- 代码片段：5-2-sort；
