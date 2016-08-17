@@ -4,8 +4,8 @@
 ![image](http://hukai.me/images/android_perf_5_threading_main_thread.png)
 
 1. Render Perfermance  
-    ![image](http://hukai.me/images/draw_per_16ms.png)
-    ![image](http://hukai.me/images/vsync_over_draw.png)
+    ![image](http://hukai.me/images/draw_per_16ms.png)    
+    ![image](http://hukai.me/images/vsync_over_draw.png)    
     - 帧率（GPU是一秒绘制操作帧数），屏幕刷新率（硬件决定）；
     - Android 系统每隔16ms发出VSYNC信号；
     - 程序16ms需要执行完成；
