@@ -1,19 +1,19 @@
 ### 二. Android 性能-渲染高级（平衡Design与Performance）
 
 0. UI Thread（Main Thread）  
-![image](http://hukai.me/images/android_perf_5_threading_main_thread.png)
+![image](http://hukai.me/images/android_perf_5_threading_main_thread.png)   
 
 1. Rendering Pipeline: Common problems  
     - 渲染依赖的核心组件：
         - CPU：负责Measure Layout Record Excute 计算操作；
         - GPU：负责Rasterzation（栅格化）；
     - Rendering Pipeline（CPU GPU 涉及的性能）：   
-    ![image](http://hukai.me/images/android_performance_course_render_problems.jpg)
+    ![image](http://hukai.me/images/android_performance_course_render_problems.jpg)     
 
 2. Visualize and Fix Overdraw - Quiz & Solution   
     - 对比案例：  
-    ![image](http://hukai.me/images/android_perf_course_overdraw_compare.png)  
-    - [上述案例代码，出品于Udacity](https://github.com/udacity/ud825-render/tree/1.11_chat_with_overdraws)；
+    ![image](http://hukai.me/images/android_perf_course_overdraw_compare.png)     
+    - [上述案例代码，出品于Udacity](https://github.com/udacity/ud825-render/tree/1.11_chat_with_overdraws)；   
     - 如何优化上述方案：
         - 移除Window默认的Background；
         - 移除XML布局文件中非必需的Background；
@@ -29,36 +29,36 @@
 3. Layouts, Invalidations and Perf  
     - XML布局对象-->CPU-->DisplayList-->GPU渲染；
     - View Property属性改变（移动位置）： Execute Display List；  
-    ![image](http://hukai.me/images/android_perf_course_displaylist_execute.png)
+    ![image](http://hukai.me/images/android_perf_course_displaylist_execute.png)     
     - 修改了View中的某些**可见组件**的**内容**:必须重新创建dispalylsit；  
-    ![image](http://hukai.me/images/android_perf_course_displaylist_invalidation.png)
+    ![image](http://hukai.me/images/android_perf_course_displaylist_invalidation.png)     
     - 案例：  
         > 任何时候View中的**绘制内容**发生**变化**时，都会需要**重新创建DisplayList**，渲染DisplayList，更新到屏幕上等一系列操作。这个流程的表现性能取决于你的View的复杂程度，View的状态变化以及渲染管道的执行性能。举个例子，假设某个Button的大小需要增大到目前的两倍，在增大Button大小之前，需要通过父View重新计算并摆放其他子View的位置。修改View的大小会触发整个HierarcyView的重新计算大小的操作。如果是修改View的位置则会触发HierarchView重新计算其他View的位置。如果布局很复杂，这就会很容易导致严重的性能问题。   
 
-        ![image](http://hukai.me/images/android_perf_course_displaylist_kick_off.png)
+        ![image](http://hukai.me/images/android_perf_course_displaylist_kick_off.png)    
 
 4. Tool: Hierarchy Viewer: Walkthrough   
     - 提升布局性能的关键点是尽量保持**布局层级的扁平化**，避免出现重复的嵌套布局;  
-    ![image](http://hukai.me/images/android_perf_course_hierarchy_1.png)
-    ![image](http://hukai.me/images/android_perf_course_hierarchy_2.png)
+    ![image](http://hukai.me/images/android_perf_course_hierarchy_1.png)   
+    ![image](http://hukai.me/images/android_perf_course_hierarchy_2.png)   
     
     - 性能指标说明（红，黄， 绿 ）：  
-    ![image](http://hukai.me/images/android_perf_course_hierarchy_3.png)
+    ![image](http://hukai.me/images/android_perf_course_hierarchy_3.png)   
         - 布局的Measure;
         - 布局的Layout; 
         - 布局的Executive;    
-    - [layout案例代码，出自于Udacity](https://github.com/udacity/ud825-render/tree/1.31_comparing_layouts)；
+    - [layout案例代码，出自于Udacity](https://github.com/udacity/ud825-render/tree/1.31_comparing_layouts)；  
 
 5. Android-monitors-GPU：  
     - Activity出错堆栈信息详解，如何阅读：
     
     - Android-Monitors_GPU：  
         
-        ![image](https://github.com/frankjunqi/SkillStack/blob/master/TC-Android-Training/pic/GPU_monitor.png?raw=true)   
+        ![image](https://github.com/frankjunqi/SkillStack/blob/master/TC-Android-Training/pic/GPU_monitor.png?raw=true)       
         - Android M版本开始，GPU Profiling工具把渲染操作拆解成如下8个详细的步骤：   
-        ![image](http://hukai.me/images/android_perf_5_gpu_profiling_8steps.png)
+        ![image](http://hukai.me/images/android_perf_5_gpu_profiling_8steps.png)   
         - 旧版对应的含义：   
-            ![image](http://hukai.me/images/android_perf_5_gpu_profiling_3steps.png)
+            ![image](http://hukai.me/images/android_perf_5_gpu_profiling_3steps.png)    
             - 旧版 Process ---> Swap Buffer;
             - 旧版 Excute ---> Command issue;
             - 旧版 Update ---> Draw;
