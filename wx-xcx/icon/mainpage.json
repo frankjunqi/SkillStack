@@ -1,0 +1,156 @@
+{
+    "response": {
+        "header": {
+            "rspType": "0",
+            "rspCode": "0000",
+            "rspDesc": "获取成功"
+        },
+        "body": {
+            "advertismentList": [
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160927/clientContent/2016092714262758649431.jpg",
+                    "title": "1"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160921/clientContent/2016092118512175216489.jpg",
+                    "title": "1"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160919/clientContent/2016091914331963016367.jpg",
+                    "title": "1"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160921/clientContent/2016092116382124109247.jpg",
+                    "title": "1"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160907/clientContent/2016090717290713330528.jpg",
+                    "title": "1"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160921/clientContent/2016092116032152776957.jpg",
+                    "title": "1"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160919/clientContent/2016091910591910192263.jpg",
+                    "title": "1"
+                }
+            ],
+            "partone": [
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160928/clientContent/2016092815582830816776.png",
+                    "title": "门票"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160803/clientContent/2016080314510360939781.png",
+                    "title": "酒店·国际"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160825/clientContent/2016082518152573460496.png",
+                    "title": "短途自驾"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160825/clientContent/2016082518142587560423.png",
+                    "title": "周边游"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160803/clientContent/2016080314510304499785.png",
+                    "title": "短途跟团"
+                }
+            ],
+            "parttwo": [
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160803/clientContent/2016080314530339579762.png",
+                    "title": "机票·国际"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160918/clientContent/2016091808281890196141.png",
+                    "title": "火车票·抢票"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160907/clientContent/2016090715460781873841.png",
+                    "title": "汽车票"
+                }
+            ],
+            "partthree": [
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160803/clientContent/2016080314530376259745.png",
+                    "title": "旅游"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160803/clientContent/2016080314540346579779.png",
+                    "title": "出境游"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160907/clientContent/2016090715460715007289.png",
+                    "title": "国内游"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160907/clientContent/2016090715470763522062.png",
+                    "title": "邮轮"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160907/clientContent/2016090715450709356614.png",
+                    "title": "攻略游记"
+                }
+            ],
+            "partfour": [
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160803/clientContent/2016080314430385379789.png",
+                    "title": "咨询服务"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160803/clientContent/2016080314440331659752.png",
+                    "title": "身边·门店"
+                },
+                {
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160803/clientContent/2016080314440346259745.png",
+                    "title": "金融理财"
+                }
+            ],
+            "partfive": [
+                {
+                    "title": "有票",
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160802/clientContent/2016080215230271332633.png"
+                },
+                {
+                    "title": "签证",
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160802/clientContent/2016080215230276725316.png"
+                },
+                {
+                    "title": "全球wifi",
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160802/clientContent/2016080215240201453489.png"
+                },
+                {
+                    "title": "海外玩乐",
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160802/clientContent/2016080215250280651948.png"
+                },
+                {
+                    "title": "白条旅游",
+                    "imageUrl": "http://tcw-public.b0.upaiyun.com/20160818/clientContent/2016081818121817277794.png"
+                }
+            ],
+            "productmoudle": {
+                "title": "【引爆周三】上海出发，昆明+普洱+西双版纳+中缅边境三飞6日跟团游",
+                "priceOld": "1588",
+                "iconUrl": "http://tcw-public.b0.upaiyun.com/20160701/ClientContent/2016070117590191109660.png",
+                "imgUrl": "http://tcw-discount.b0.upaiyun.com/Discount/bd3ae8ede834469e904c00242bf6ed45",
+                "stockText": "仅限100份"
+            },
+            "partsix": [
+                {
+                    "subTitle": "首单立减",
+                    "iconUrl": "http://tcw-public.b0.upaiyun.com/20160603/ClientContent/2016060313350305283534.png"
+                },
+                {
+                    "subTitle": "签到有喜",
+                    "iconUrl": "http://tcw-public.b0.upaiyun.com/20160526/ClientContent/2016052615182677157117.png"
+                }
+            ],
+            "partseven": {
+                "title": "广告",
+                "iconUrl": "http://tcw-public.b0.upaiyun.com/20160923/clientContent/2016092317172396593492.jpg"
+            }
+        }
+    }
+}
